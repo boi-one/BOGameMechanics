@@ -17,12 +17,23 @@ public class movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += transform.right * (Time.deltaTime * speed);
+            transform.position -= new Vector3(0.4f ,0, 0) * ((Time.deltaTime) * speed);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= transform.right * (Time.deltaTime * speed);
+            transform.position += new Vector3(0.4f, 0, 0) * ((Time.deltaTime) * speed);
         }
-        if (Input System.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.position += new Vector3(0, 0.6f, 0) * ((Time.deltaTime) * speed);
+        }
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.position -= new Vector3(0, 0, 0.4f) * ((Time.deltaTime) * speed);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += new Vector3(0, 0, 0.4f) * ((Time.deltaTime) * speed);
+        }
     }
 }
