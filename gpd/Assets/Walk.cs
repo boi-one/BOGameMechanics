@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+
 public class Walk : MonoBehaviour
 {
     public Rigidbody rb;
@@ -9,7 +11,8 @@ public class Walk : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    // Start is called before the first frame update
+
+    public float movementSpeed = 5.0f;
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
@@ -23,23 +26,23 @@ public class Walk : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * Time.deltaTime * 10;
+            transform.position += movementSpeed * Time.deltaTime * transform.forward;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.position -= Vector3.forward * Time.deltaTime * 10;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += Vector3.right * Time.deltaTime * 10;
+            transform.position -= movementSpeed * Time.deltaTime * transform.forward;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position -= Vector3.right * Time.deltaTime * 10;
+            transform.position -= movementSpeed * Time.deltaTime * transform.right;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.position += movementSpeed * Time.deltaTime * transform.right;
         }
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.AddForce(Vector3.up * 100 * 4);
+            rb.AddForce(Vector3.up * 90 * 4);
         }
         Physics.gravity = new Vector3(0, -10, 0);
     }
