@@ -45,5 +45,8 @@ public class Walk : MonoBehaviour
             rb.AddForce(Vector3.up * 90 * 4);
         }
         Physics.gravity = new Vector3(0, -10, 0);
+
+
+
     }
 }
