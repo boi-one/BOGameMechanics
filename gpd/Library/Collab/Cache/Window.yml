@@ -14,15 +14,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Plane.png
-    - Assets/Plane.png.meta
-    - Assets/grAS.mat
-    - Assets/grAS.mat.meta
-    - Assets/untitlgrassshited.fbx
-    - Assets/untitlgrassshited.fbx.meta
+    - Assets/man.fbx
+    - Assets/man.fbx.meta
+    - Assets/smallwall.fbx
+    - Assets/smallwall.fbx.meta
+    - Assets/wall.fbx
+    - Assets/wall.fbx.meta
+    - Assets/wallpart1.fbx
+    - Assets/wallpart1.fbx.meta
+    - Assets/wallpart2.fbx
+    - Assets/wallpart2.fbx.meta
+    - Assets/wallpart3 1.fbx
+    - Assets/wallpart3 1.fbx.meta
+    - Assets/wallpart3.fbx
+    - Assets/wallpart3.fbx.meta
     - 
-    m_Values: 01010101010101
-  RevisionSummary: terrain weg
+    m_Values: 010101010101010101010101010101
+  RevisionSummary: texures
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

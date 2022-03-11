@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\balll.cs" />
+    <Compile Include="Assets\Move.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
