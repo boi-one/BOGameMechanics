@@ -56,8 +56,9 @@
     <Compile Include="Assets\obstacle.cs" />
     <Compile Include="Assets\shoot.cs" />
     <Compile Include="Assets\Walk.cs" />
-    <Compile Include="Assets\MouseLook.cs" />
     <Compile Include="Assets\pickup.cs" />
+    <Compile Include="Assets\MouseLook.cs" />
+    <Compile Include="Assets\destroi.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

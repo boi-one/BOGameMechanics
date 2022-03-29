@@ -18,15 +18,14 @@ public class shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("klik");
             Transform bullet = Instantiate(prefab);
             bullet.transform.position = transform.position;
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
             Vector3 vel = (Quaternion.Euler(cameratransform.eulerAngles.x, playertransform.eulerAngles.y, 0) * Vector3.forward * speed);
             //vel.z = 0;
             rb.AddForce (vel);
-        }
+        }       
     }
 }
