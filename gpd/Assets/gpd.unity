@@ -3243,7 +3243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe79fe9f05e7174590d19c4f01cd8b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  down: 2000
+  down: 600
 --- !u!4 &2095695804 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 730135465f576194e80bc3709a08e6e9, type: 3}
