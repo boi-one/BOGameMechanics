@@ -59,6 +59,7 @@
     <Compile Include="Assets\pickup.cs" />
     <Compile Include="Assets\MouseLook.cs" />
     <Compile Include="Assets\destroi.cs" />
+    <Compile Include="Assets\animationcontroller.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -18,7 +18,7 @@ public class shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             Transform bullet = Instantiate(prefab);
             bullet.transform.position = transform.position;
